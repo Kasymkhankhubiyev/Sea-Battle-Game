@@ -9,6 +9,8 @@
 class Field
 {
 	size_t m_arr[20][20];
+protected:
+	static size_t ind;
 public:
 	void Draw_score();
 
