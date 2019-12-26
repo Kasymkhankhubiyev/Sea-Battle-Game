@@ -1,5 +1,6 @@
 #include "Graphics.h"
 
+size_t Field::ind = 0;
 void Field::Draw_score()
 {
 	std::cout << " player 1 - Score:  " << std::endl;
