@@ -1,6 +1,8 @@
 #include "Game.h"
 #include "Graphics.h"         //system("cls"); - функция очистки консоли!
 
+bool Game::run;
+
 Game::Game()
 {
 	run = true;
