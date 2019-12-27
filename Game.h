@@ -3,7 +3,10 @@
 
 class Game
 {
-	bool run;
+	
+	static bool run;
+protected:
+	
 public:
 	Game();
 	int Execute();
