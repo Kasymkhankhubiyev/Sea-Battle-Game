@@ -19,7 +19,7 @@ void Field::Draw_field_line(size_t arr[20][20])
 
 }
 
-void Field::Draw_player_field(size_t arr[20][20])
+void Field::Draw_player_field(char arr[20][20])
 {
 	std::cout << "SEA BUTTLE -- Game for 2 palyers" << std::endl;
 	for (int i = 0; i < 20;i++)
