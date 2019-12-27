@@ -24,6 +24,7 @@ class Player: public Field
 	size_t cruiser;
 	size_t buttle_ship;
 	size_t shoot;
+	size_t tactic;
 	//std::map<size_t, pair <size_t, size_t>> shoot_story;
 public:
 	Player();
@@ -36,9 +37,15 @@ public:
 
 	void Set_ship_type();
 
-	void ReDraw();
+	size_t Choice();
+
+	void Set_ships_concole();
+
+	void ReDraw(size_t&Ships1, size_t&Score1, size_t&Ships2, size_t& Score2);
 
 	void Reset(size_t& x, size_t& y);
+
+	void Draw();
 
 	void Draw_player_field();
 
@@ -49,7 +56,16 @@ public:
 	void Draw_battle_field();
 
 	void Wait_func();
+
+	void PersonTactic(bool& comp, size_t&x, size_t& y);
+
+	void EasyTactic(bool& comp, size_t&x, size_t& y);
 };
 
 #endif // !_PLAYER_H_
 #pragma once
+/*while (comp == false)
+		{
+			player2.Make_shoot(x, y);
+			comp = player2.Compare1(x, y);
+		}*/
